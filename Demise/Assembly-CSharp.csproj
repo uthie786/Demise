@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{4507a709-6161-a161-1adb-9fa13ad2492f}</ProjectGuid>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\Unity.Rider.Editor\</OutputPath>
+    <DefineConstants>UNITY_EDITOR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169,0649</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Folder Include="Assets" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters" />
+     <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Environment\Tiles" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Grasses" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Environment\Decorations" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Environment" />
+     <Folder Include="Assets\Asset FTTGR\Palettes\Decorations" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Fires" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Berries" />
+     <Folder Include="Assets\Asset FTTGR\Sprites" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Grasses\Grass2" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\Enviroment\InteractiveObjects" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\Characters\Hero" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX\IceGolem" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Characters\Enemies" />
+     <Folder Include="Assets\Settings" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters\Enemy" />
+     <Folder Include="Assets\Asset FTTGR" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\VFXs" />
+     <Folder Include="Assets\Asset FTTGR\Audio\Music" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Lianas\Lian4" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Grasses\Grass1" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Environment\Grounds" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\InteractiveObjects\Spring" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment" />
+     <None Include="Assets\Asset FTTGR\Shader\Wind.shader" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters\Enemy\Skeleton" />
+     <Folder Include="Assets\Settings\Scenes" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\InteractiveObjects" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Rags\Rag1" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\Enviroment" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\Characters\Enemies" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX\Skeleton" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Lianas" />
+     <Folder Include="Assets\Asset FTTGR\Palettes\Obstacles" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Berries\Berrie1" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Lianas\Lian3" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Lianas\Lian1" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\VFXs\SnowScreens" />
+     <Folder Include="Assets\Asset FTTGR\Palettes\Blocks" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Fires\FireType2" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Berries\Berrie2" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\Characters" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Rags\Rag2" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters\Enemy\Crow" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Lianas\Lian2" />
+     <Folder Include="Assets\Asset FTTGR\Palettes" />
+     <Folder Include="Assets\Asset FTTGR\Materials\Distortion" />
+     <Folder Include="Assets\Asset FTTGR\Materials\Distortion\Snowflakes" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Characters" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Characters\Hero" />
+     <Folder Include="Assets\Asset FTTGR\Prefabs\Enviroment\Decorations" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters\Enemy\Mashroom" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX" />
+     <Folder Include="Assets\Asset FTTGR\Audio" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX\Crow" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Rags" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX\Wolf" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX\Mushroom" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters\Hero" />
+     <Folder Include="Assets\Asset FTTGR\Shader" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\Environment\InteractiveObjects" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Grasses\Grass3" />
+     <Folder Include="Assets\Asset FTTGR\Materials\Wind" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Environment\Decorations\Fires\FireType1" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX\Hero\FootSteps" />
+     <Folder Include="Assets\Asset FTTGR\Audio\SFX\Hero" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters\Enemy\Wolf" />
+     <Folder Include="Assets\Asset FTTGR\Audio\Ambient" />
+     <Folder Include="Assets\Asset FTTGR\Materials" />
+     <Folder Include="Assets\Asset FTTGR\Animations\Characters\Enemy\IceGolem" />
+     <Folder Include="Assets\Asset FTTGR\NormalMaps" />
+     <Folder Include="Assets\Asset FTTGR\Animations" />
+     <Folder Include="Assets\Asset FTTGR\Sprites\VFXs" />
+     <Reference Include="UnityEngine">
+     <HintPath>E:\UnityHub\Unity Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.CoreModule">
+     <HintPath>E:\UnityHub\Unity Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor">
+     <HintPath>E:\UnityHub\Unity Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+     </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
