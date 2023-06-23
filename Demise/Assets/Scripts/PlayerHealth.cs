@@ -1,23 +1,26 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] public int playerHealth;
     public int healthcount = 3;
     private bool isAlive;
     [SerializeField] public GameObject[] hearts;
     
-    private SpriteRenderer h1;
-    private SpriteRenderer h2;
-    private SpriteRenderer h3;
+    private Image h1;
+    private Image h2;
+    private Image h3;
+    
+    public static PlayerHealth Instance { get; set; }
     void Start()
     {
-        h1 = hearts[0].GetComponent<SpriteRenderer>();
-        h2 = hearts[1].GetComponent<SpriteRenderer>();
-        h3 = hearts[2].GetComponent<SpriteRenderer>();
+        h1 = hearts[0].GetComponent<Image>();
+        h2 = hearts[1].GetComponent<Image>();
+        h3 = hearts[2].GetComponent<Image>();
     }
 
     private void Update()
@@ -25,6 +28,11 @@ public class PlayerHealth : MonoBehaviour
         PlayerDamaged();
     }
 
+    public void PlayerHit()
+    {
+        healthcount--;
+        Debug.Log(healthcount);
+    }
     public void PlayerDamaged()
     {
         if (healthcount > 0)

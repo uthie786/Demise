@@ -8,13 +8,18 @@ public class UIController : MonoBehaviour
 {
     public PlayShoot _playShoot;
     public Text ammoText;
-   
+    
     public static UIController Instance { get; set; }
+
+    public void Start()
+    {
+        _playShoot = GameObject.Find("BulletExitPlayer").GetComponent<PlayShoot>();
+    }
     
     public void SetAmmo()
     {
         int ammo;
         ammo = _playShoot.currentAmmo;
-        ammoText.text = "AMMO: " + ammo.ToString();
+        ammoText.text = ammo.ToString();
     }
 }

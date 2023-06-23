@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dc51d4409ba6c2c42a86d354d156f5a0
+guid: 785cc4cd0dee7a14da17fc25c18cf5c3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,18 +117,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: AmmoClip_Frame_0
+  - name: Ammo (1)_Frame_0
     originalName: 
-    pivot: {x: 0.62499994, y: -2}
+    pivot: {x: 0.5, y: -0.34782606}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 12
-      height: 13
-    spriteID: 77e5f50be120d6446b1bb9229660cf24
+      width: 22
+      height: 23
+    spriteID: ea5856d2ce4901645a75d33ed2f3d369
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -137,18 +137,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: AmmoClip_Frame_1
+  - name: Ammo (1)_Frame_1
     originalName: 
-    pivot: {x: 0.62499994, y: -2.0769231}
+    pivot: {x: 0.5, y: -0.5217391}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 25
-      width: 12
-      height: 13
-    spriteID: b6d91ffc4636ce742b4d5d6a6a0dd8e2
+      y: 35
+      width: 22
+      height: 23
+    spriteID: 45d3ba6d90e38574a91b597109b6130e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,19 +156,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 25}
-  - name: AmmoClip_Frame_2
+    uvTransform: {x: 4, y: 35}
+  - name: Ammo (1)_Frame_2
     originalName: 
-    pivot: {x: 0.62499994, y: -2.1538463}
+    pivot: {x: 0.5, y: -0.5652174}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 46
-      width: 12
-      height: 13
-    spriteID: 3257a90eb4c700542a187985276f66af
+      y: 66
+      width: 22
+      height: 23
+    spriteID: 6ced7c6d8b5d84b459678db4d45f1879
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -176,19 +176,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 46}
-  - name: AmmoClip_Frame_3
+    uvTransform: {x: 4, y: 66}
+  - name: Ammo (1)_Frame_3
     originalName: 
-    pivot: {x: 0.62499994, y: -2.2307692}
+    pivot: {x: 0.5, y: -0.5217391}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
+      x: 4
+      y: 97
+      width: 22
+      height: 23
+    spriteID: 607af4e57ee66ba4cb45331abeda613c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 97}
+  - name: Ammo (1)_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.34782606}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 34
       y: 4
-      width: 12
-      height: 13
-    spriteID: 23e1808bcaf19e043a73e801e0357444
+      width: 22
+      height: 23
+    spriteID: 40075dd77eadc4146b16e961b9df7fb0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -196,163 +216,59 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 4}
-  - name: AmmoClip_Frame_4
-    originalName: 
-    pivot: {x: 0.62499994, y: -2.1538463}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 24
-      y: 25
-      width: 12
-      height: 13
-    spriteID: 0b1c2d58975ed0f49bff487c5e6c049a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 24, y: 25}
-  - name: AmmoClip_Frame_5
-    originalName: 
-    pivot: {x: 0.62499994, y: -2.0769231}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 24
-      y: 46
-      width: 12
-      height: 13
-    spriteID: 6dcb025cd5a68034a9c5e39b81cc41ea
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 24, y: 46}
-  - name: AmmoClip_Frame_6
-    originalName: 
-    pivot: {x: 0.62499994, y: -2}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 44
-      y: 4
-      width: 12
-      height: 13
-    spriteID: 71368215d9967404dace128d61ac5211
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
-  - name: AmmoClip_Frame_7
-    originalName: 
-    pivot: {x: 0.62499994, y: -1.923077}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 44
-      y: 25
-      width: 12
-      height: 13
-    spriteID: 631e4c23bb6cb854294916d8500c06aa
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 44, y: 25}
+    uvTransform: {x: 34, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 801521026
-    name: AmmoClip
+    guid: -438842210
+    name: Ammo (1)
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: AmmoClip_Frame_0
+    - name: Ammo (1)_Frame_0
       frameIndex: 0
       cellRect:
-        x: 30
-        y: 26
-        width: 12
-        height: 13
-      spriteId: 77e5f50be120d6446b1bb9229660cf24
-    - name: AmmoClip_Frame_1
+        x: 14
+        y: 8
+        width: 22
+        height: 23
+      spriteId: ea5856d2ce4901645a75d33ed2f3d369
+    - name: Ammo (1)_Frame_1
       frameIndex: 1
       cellRect:
-        x: 30
-        y: 27
-        width: 12
-        height: 13
-      spriteId: b6d91ffc4636ce742b4d5d6a6a0dd8e2
-    - name: AmmoClip_Frame_2
+        x: 14
+        y: 12
+        width: 22
+        height: 23
+      spriteId: 45d3ba6d90e38574a91b597109b6130e
+    - name: Ammo (1)_Frame_2
       frameIndex: 2
       cellRect:
-        x: 30
-        y: 28
-        width: 12
-        height: 13
-      spriteId: 3257a90eb4c700542a187985276f66af
-    - name: AmmoClip_Frame_3
+        x: 14
+        y: 13
+        width: 22
+        height: 23
+      spriteId: 6ced7c6d8b5d84b459678db4d45f1879
+    - name: Ammo (1)_Frame_3
       frameIndex: 3
       cellRect:
-        x: 30
-        y: 29
-        width: 12
-        height: 13
-      spriteId: 23e1808bcaf19e043a73e801e0357444
-    - name: AmmoClip_Frame_4
+        x: 14
+        y: 12
+        width: 22
+        height: 23
+      spriteId: 607af4e57ee66ba4cb45331abeda613c
+    - name: Ammo (1)_Frame_4
       frameIndex: 4
       cellRect:
-        x: 30
-        y: 28
-        width: 12
-        height: 13
-      spriteId: 0b1c2d58975ed0f49bff487c5e6c049a
-    - name: AmmoClip_Frame_5
-      frameIndex: 5
-      cellRect:
-        x: 30
-        y: 27
-        width: 12
-        height: 13
-      spriteId: 6dcb025cd5a68034a9c5e39b81cc41ea
-    - name: AmmoClip_Frame_6
-      frameIndex: 6
-      cellRect:
-        x: 30
-        y: 26
-        width: 12
-        height: 13
-      spriteId: 71368215d9967404dace128d61ac5211
-    - name: AmmoClip_Frame_7
-      frameIndex: 7
-      cellRect:
-        x: 30
-        y: 25
-        width: 12
-        height: 13
-      spriteId: 631e4c23bb6cb854294916d8500c06aa
+        x: 14
+        y: 8
+        width: 22
+        height: 23
+      spriteId: 40075dd77eadc4146b16e961b9df7fb0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 75, y: 75}
+  canvasSize: {x: 50, y: 50}

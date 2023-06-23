@@ -7,12 +7,21 @@ public class EnemyController : MonoBehaviour
 {
 
     private GameObject enemy;
-    [SerializeField] public int enemyHealth = 3;
+    [SerializeField] public int enemyHealth = 2;
 
-
+    public static EnemyController Instance { get; set; }
     public void Update()
     {
-        EnemyDead();
+        
+    }
+
+    public void EnemyHit()
+    {
+        enemyHealth--;
+        if (enemyHealth <= 0)
+        {
+            EnemyDead();
+        }
     }
 
     public void EnemyDead()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,12 @@ public class PlayShoot : MonoBehaviour
     private UIController _ui;
 
     public static PlayShoot Instance { get; set; }
+
+    private void Start()
+    {
+        _ui = GameObject.Find("GameWindow").GetComponent<UIController>();
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -25,6 +32,7 @@ public class PlayShoot : MonoBehaviour
     {
         if (currentAmmo > 0)
         {
+            shoot.Rotate(0,0,0);
             Instantiate(bullet, shoot.position, shoot.rotation);
             currentAmmo--;
         }
