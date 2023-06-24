@@ -14,7 +14,7 @@ public class BulletEnemy : MonoBehaviour
     {
         _player = GameObject.Find("Player").GetComponent<PlayerHealth>();
         rigid.velocity = transform.right * speed;
-        playerPerson = GameObject.Find("Player").GetComponent<Collision2D>();
+        //playerPerson = GameObject.Find("Player").GetComponent<Collision2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)

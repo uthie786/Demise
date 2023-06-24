@@ -7,9 +7,20 @@ using UnityEngine;
 public class AmmoClipController : MonoBehaviour
 {
     private PlayShoot _playShoot;
+    [SerializeField] private AudioSource reloadSound;
+    private void Start()
+    {
+        _playShoot = GameObject.Find("BulletExitPlayer").GetComponent<PlayShoot>();
+    }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
-        _playShoot.currentAmmo = 7;
+        if (other.transform.tag == "Player")
+        {
+            reloadSound.Play();
+            Destroy(gameObject);
+            _playShoot.Reload();
+        }
+        
     }
 }

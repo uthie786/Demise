@@ -7,7 +7,7 @@ public class PlayShoot : MonoBehaviour
 {
     public Transform shoot;
     public GameObject bullet;
-
+    [SerializeField] private AudioSource shootAudio;
     public int currentAmmo = 7;
     private UIController _ui;
 
@@ -33,9 +33,16 @@ public class PlayShoot : MonoBehaviour
         if (currentAmmo > 0)
         {
             shoot.Rotate(0,0,0);
+            shootAudio.Play();
             Instantiate(bullet, shoot.position, shoot.rotation);
             currentAmmo--;
         }
         
+    }
+
+    public void Reload()
+    {
+        currentAmmo = 7;
+        _ui.SetAmmo();
     }
 }

@@ -8,7 +8,8 @@ public class EnemyController : MonoBehaviour
 
     private GameObject enemy;
     [SerializeField] public int enemyHealth = 2;
-
+    [SerializeField] private Animator enemyAnim;
+    [SerializeField] private AudioSource hitSound;
     public static EnemyController Instance { get; set; }
     public void Update()
     {
@@ -18,17 +19,21 @@ public class EnemyController : MonoBehaviour
     public void EnemyHit()
     {
         enemyHealth--;
+        hitSound.Play();
         if (enemyHealth <= 0)
         {
-            EnemyDead();
+            StartCoroutine(EnemyDead());
         }
     }
 
-    public void EnemyDead()
+    IEnumerator EnemyDead()
     {
         if (enemyHealth <= 0)
         {
-            Destroy(enemy);
+            
+            enemyAnim.Play("Death");
+            yield return new WaitForSeconds(1);
+            Destroy(gameObject);
         }
     }
     

@@ -10,7 +10,8 @@ public class PlayerHealth : MonoBehaviour
     public int healthcount = 3;
     private bool isAlive;
     [SerializeField] public GameObject[] hearts;
-    
+    [SerializeField] private Animator playerAnim;
+    [SerializeField] private AudioSource hitSound;
     private Image h1;
     private Image h2;
     private Image h3;
@@ -25,15 +26,16 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        PlayerDamaged();
+        StartCoroutine(PlayerDamaged());
     }
 
     public void PlayerHit()
     {
+        hitSound.Play();
         healthcount--;
         Debug.Log(healthcount);
     }
-    public void PlayerDamaged()
+    public IEnumerator PlayerDamaged()
     {
         if (healthcount > 0)
         {
@@ -67,6 +69,8 @@ public class PlayerHealth : MonoBehaviour
             h1.enabled = false;
             h2.enabled = false;
             h3.enabled = false;
+            playerAnim.Play("Death");
+            yield return new WaitForSeconds(1);
             Destroy(gameObject);
         }
     }

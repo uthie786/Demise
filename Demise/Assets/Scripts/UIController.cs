@@ -6,14 +6,15 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public PlayShoot _playShoot;
+    private PlayShoot _playShoot;
     public Text ammoText;
-    
+    [SerializeField] private AudioSource gameMusic;
     public static UIController Instance { get; set; }
 
     public void Start()
     {
         _playShoot = GameObject.Find("BulletExitPlayer").GetComponent<PlayShoot>();
+        gameMusic.Play();
     }
     
     public void SetAmmo()

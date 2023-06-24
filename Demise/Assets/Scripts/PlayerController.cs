@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float jumpForce;
     private bool isGrounded;
     
-
+    [SerializeField] private Animator playerAnim;
     private Rigidbody2D _rigidbody;
     private bool facingRight = true;
 
@@ -32,6 +32,12 @@ public class PlayerController : MonoBehaviour
         if (movement != 0)
         {
             _rigidbody.AddForce(new Vector2(movement * movementSpeed, 0f));
+            playerAnim.Play("Run");
+        }
+
+        if (movement == 0)
+        {
+            playerAnim.Play("Idle");
         }
         if (movement > 0 && !facingRight)
         {
@@ -52,12 +58,12 @@ public class PlayerController : MonoBehaviour
         //}
     //}
 
-    public void Jump()
+    private void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-            {
+        {
                 _rigidbody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-            }
+        }
     }
 
     void Flip()
