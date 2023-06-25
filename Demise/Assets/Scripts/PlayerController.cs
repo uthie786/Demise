@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] public float movementSpeed;
     [SerializeField] public float jumpForce;
+    [SerializeField] private AudioSource jumpSound;
+  
     private bool isGrounded;
     
     [SerializeField] private Animator playerAnim;
@@ -62,6 +64,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            jumpSound.Play();
                 _rigidbody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
         }
     }

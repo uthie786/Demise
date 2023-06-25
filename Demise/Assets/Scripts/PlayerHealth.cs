@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public GameObject[] hearts;
     [SerializeField] private Animator playerAnim;
     [SerializeField] private AudioSource hitSound;
+    [SerializeField] private AudioSource endSound;
+    [SerializeField] private GameObject endScreen;
     private Image h1;
     private Image h2;
     private Image h3;
@@ -22,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
         h1 = hearts[0].GetComponent<Image>();
         h2 = hearts[1].GetComponent<Image>();
         h3 = hearts[2].GetComponent<Image>();
+        endScreen.SetActive(false);
     }
 
     private void Update()
@@ -71,6 +74,8 @@ public class PlayerHealth : MonoBehaviour
             h3.enabled = false;
             playerAnim.Play("Death");
             yield return new WaitForSeconds(1);
+            endSound.Play();
+            endScreen.SetActive(true);
             Destroy(gameObject);
         }
     }
