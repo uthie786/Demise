@@ -12,13 +12,7 @@ public class Trap : MonoBehaviour
         ph = GameObject.Find("Player").GetComponent<PlayerHealth>();
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void OnTriggerEnter2D(Collider2D other)
     {
         ph.healthcount = 0;

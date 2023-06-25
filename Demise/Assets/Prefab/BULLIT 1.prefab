@@ -138,3 +138,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rigid: {fileID: 6175212953060674695}
+  _enemy: {fileID: 0}
+  enemy:
+  - {fileID: 6183352903919609663, guid: 1af05a4df0dd139449100227a778004d, type: 3}
+  - {fileID: 6183352903919609663, guid: 1af05a4df0dd139449100227a778004d, type: 3}
+  - {fileID: 6183352903919609663, guid: 1af05a4df0dd139449100227a778004d, type: 3}
+  - {fileID: 6183352903919609663, guid: 1af05a4df0dd139449100227a778004d, type: 3}
+  - {fileID: 6183352903919609663, guid: 1af05a4df0dd139449100227a778004d, type: 3}
