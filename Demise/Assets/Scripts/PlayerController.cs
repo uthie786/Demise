@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -9,8 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float movementSpeed;
     [SerializeField] public float jumpForce;
     [SerializeField] private AudioSource jumpSound;
+    private IsGrounded _ground;
   
-    private bool isGrounded;
+    
     
     [SerializeField] private Animator playerAnim;
     private Rigidbody2D _rigidbody;
@@ -18,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+        _ground = GameObject.Find("isGrounded").GetComponent<IsGrounded>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -52,20 +54,20 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    //public void Grounded()
-    //{
-        //if (Vector3.up * jumpForce)
-        //{
-            
-        //}
-    //}
+    
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        float grounded = Input.GetAxisRaw("Vertical");
+        if (Input.GetKeyDown(KeyCode.Space) && _ground.groundCheck)
         {
+            
+            
             jumpSound.Play();
+           
                 _rigidbody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+                Debug.Log(_ground.groundCheck);
+               
         }
     }
 
